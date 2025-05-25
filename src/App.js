@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';  //Loads React library to use JSX (mandatory)
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+function App() {  //A React component — it returns some JSX
+
+  return (    //JSX — syntax to describe UI
+
+    //React needs a single parent element, so we wrap with a div
+    <div>   
+      <h1>Hello, React!</h1>
+      <p>My first React project</p>
+      <button>Click Me</button>
     </div>
   );
 }
 
-export default App;
+export default App; //Makes the component available to other files
