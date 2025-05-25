@@ -1,6 +1,7 @@
 import React from 'react';  //Loads React library to use JSX (mandatory)
 import Hello from './Hello'; //Imports the Hello component from another file
 import ProfileCard from './ProfileCard'; //Imports the ProfileCard component
+import CounterApp from './CounterApp'; 
 
 function App() {  //A React component — it returns some JSX
 
@@ -23,7 +24,8 @@ function App() {  //A React component — it returns some JSX
             role="UI/UX Designer"
             image="https://i.pravatar.cc/150?img=2"
           />
-      </div>
+       </div>
+      <CounterApp /> 
     </div>
   );
 }
